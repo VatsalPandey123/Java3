@@ -2,6 +2,25 @@ package java3;
 import java.util.*;
 public class Practice {
 	Scanner sc = new Scanner(System.in);
+	String name;
+	int id;
+	int salary=2333333;
+	void name(String name) {
+		this.name=name;
+	}
+	void id(int id) {
+		this.id=id;
+	}
+	void salary(int salary) {
+		this.salary=salary;
+	}
+	void work() {
+		System.out.println("Employee is working");
+	}
+	int getsalary() {
+		return salary;
+		
+	}
 	//Java Program to Get Input from the User
 //	int n;
 //	void get() {
@@ -95,23 +114,23 @@ public class Practice {
 //			System.out.println("not");
 //		}
 //	}
-	double a,p,r=3.8,t,c,n,k,j;
-	void get() {
-		p=sc.nextDouble();
-		t=sc.nextDouble();
-		n=sc.nextDouble();
-	}
-	void display() {
-		c=n*t;
-		k=p*(1+(r/n));
-		j=k;
-		a=(double)Math.pow(j,c);
-		System.out.println(a);
-	}
+//	double a,p,r=3.8,t,c,n,k,j;
+//	void get() {
+//		p=sc.nextDouble();
+//		t=sc.nextDouble();
+//		n=sc.nextDouble();
+//	}
+//	void display() {
+//		c=n*t;
+//		k=p*(1+(r/n));
+//		j=k;
+//		a=(double)Math.pow(j,c);
+//		System.out.println(a);
+//	}
 	public static void main(String[] args) {
 		Practice c1 = new Practice();
-		c1.get();
-		c1.display();
+		c1.work();
+		c1.getsalary();
 		}
 }
 
